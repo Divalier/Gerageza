@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: BentonSans!important;
+  background-color: #fcf7ea;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.top-nav{
+width: 100%;
+height: auto;
+background-color: #ebcf8a;
+justify-itmes:center;
+color: #753918;
+font-family: BentonSansBold!important;
+}
+.log{
+  margin-left:120px;
+  width:200px;
+}
+.log, .national,.butt{
+  border: solid black 2px;
+}
+
+.log img{
+  height:auto;
+  wdith:auto;
+}
+.nationalt{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+.main{
+  width:80%;
+  margin-left:10%;
+}
+
+.languag button {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.sep{
+  width:2px;
+  height:20px;
+  background-color: #753918;
+}
+
+.Navbar {
+  width: 100%!important;
+  overflow: inherit;
+  height: 50px!important;
+  background-color: #ab892c!important;
+  text-align: right;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  position:relative !important;
+  z-index:1 !important;
+}
+.nav{
+  color:white;
+  margin-left:
+}
+.banking button{
+  border-bottom: solid #753918 5px;
+  justify-content: center;
+  width:100px;
+  height:30px;
+}
+.cadt:hover{
+  color: #753918;
+}
+.cadb button{
+  margin-top:20px;
+  color: white;
+  background-color:#ab892c;
+}
+.cadi img{
+  width:96px;
+
+}
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+  over-flow:hidden;
+  z-index:10;
+}
+.popup_inner {
+  z-index:0;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+  over-flow:hidden;
+}
+.slide{
+  border-bottom: solid #753918 5px;
+  justify-content: center;
+  width:10px;
+  height:20px;
+  margin: 5px;
+  boder-radius:10px;
+}
