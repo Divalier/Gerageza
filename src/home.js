@@ -13,6 +13,8 @@ class Home extends React.Component {
     super();
     this.state = {
       showPopup: true,
+      image: [Slide_1, slide],
+      dispaly: Slide_1,
     };
   }
   togglePopup() {
@@ -20,14 +22,18 @@ class Home extends React.Component {
       showPopup: !this.state.showPopup,
     });
   }
-  mymove() {
-    for(let i=0; i<Infinity; i++){
-
-      for( let j=0; j<=0 ; j++){
-setTimeout(console.log(j),3000)
+  componentDidMount() {
+    let image = this.state.image;
+    let len = image.length;
+    let mov = 0;
+    setInterval(() => {
+      mov += 1;
+      if (mov < 3) {
+this.setState({dispaly:image[(mov-1)]})
+      }else{
+        mov=0
       }
-
-    }
+    }, 3000);
   }
 
   render() {
@@ -38,11 +44,11 @@ setTimeout(console.log(j),3000)
             (<NavV closePopup={this.togglePopup.bind(this)} />))
           : ((document.body.style.overflow = `scroll`), null)}
 
-        <div className="top-nav  flex flex-row p-2 justify-between">
-          <div className="w-1/4  log ">
+        <div className="top-nav  grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-1  p-2">
+          <div className="flex   log  ">
             <img alt=" bnr log" src={log} />
           </div>
-          <div className="w-1/2 national p-2 ">
+          <div className="flex flex-col space-y-3 national p-2 ">
             <p className="nationalt font-bold">NATIONAL BANK OF RWANDA</p>
             <p>
               <span className="text-2xl font-bold">"GERERANYA"</span>
@@ -54,7 +60,7 @@ setTimeout(console.log(j),3000)
               </span>
             </p>
           </div>
-          <div className="w-1/4 butt">
+          <div className=" butt">
             <div className="languag uppercase flex flex-row PX-2 space-x-2">
               <button>english</button>
               <div className="sep"></div>
@@ -83,17 +89,12 @@ setTimeout(console.log(j),3000)
           </Navbar>
           <div>
             <div className="mslide">
-              {" "}
-              <img alt="slideimage" src={Slide_1} />
-            </div>
-            <div className="mslide">
-              {" "}
-              <img alt="slideimage" src={slide} />{" "}
+              <img alt="slideimage" src={this.state.dispaly} />
             </div>
           </div>
           <div className="flex justify-center p-4">
-            <div className="slide" onClick={this.mymove(1)}></div>
-            <div className="slide" onClick={this.mymove(0)}></div>
+            <div className="slide"></div>
+            <div className="slide"></div>
           </div>
           {/* banking */}
           <div className=" bg-white mt-4">
@@ -279,7 +280,6 @@ setTimeout(console.log(j),3000)
             <div></div>
           </div>
         </div>
-        {this.mymove()}
       </div>
     );
   }

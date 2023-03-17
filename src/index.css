@@ -15,26 +15,28 @@ body {
 width: 100%;
 height: auto;
 background-color: #ebcf8a;
-justify-itmes:center;
+justify-content:center;
 color: #753918;
 font-family: BentonSansBold!important;
+
 }
 .log{
-  margin-left:120px;
-  width:200px;
+  justify-content: center;
 }
 .log, .national,.butt{
-  border: solid black 2px;
 }
 
 .log img{
   height:auto;
   wdith:auto;
+
 }
 .nationalt{
   text-align: center;
   font-size: 40px;
   font-weight: 600;
+  justify-content: center;
+
 }
 .main{
   width:80%;
@@ -73,6 +75,15 @@ font-family: BentonSansBold!important;
   width:100px;
   height:30px;
 }
+.mslide{
+height:200px;
+}
+.mslide img{
+left:100%;
+animation-name:slide;
+animation-duration:10s;
+}
+
 .cadt:hover{
   color: #753918;
 }
@@ -101,19 +112,18 @@ font-family: BentonSansBold!important;
 .popup_inner {
   z-index:0;
   position: absolute;
-  left: 25%;
-  right: 25%;
-  top: 25%;
-  bottom: 25%;
-  margin: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 16%;
+  
+  margin:;
   background: white;
   over-flow:hidden;
 }
 .slide{
   border-bottom: solid #753918 5px;
   justify-content: center;
-  width:10px;
-  height:20px;
   margin: 5px;
   boder-radius:10px;
 }
+
