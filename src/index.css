@@ -23,12 +23,19 @@ font-family: BentonSansBold!important;
 .log{
   justify-content: center;
 }
+.national{
+
+}
+.butt{
+
+}
 .log, .national,.butt{
+border:solid black 2px;
 }
 
 .log img{
   height:auto;
-  wdith:auto;
+  width:auto;
 
 }
 .nationalt{
@@ -36,6 +43,7 @@ font-family: BentonSansBold!important;
   font-size: 40px;
   font-weight: 600;
   justify-content: center;
+  width:auto;
 
 }
 .main{
@@ -87,10 +95,14 @@ animation-duration:10s;
 .cadt:hover{
   color: #753918;
 }
+
 .cadb button{
   margin-top:20px;
   color: white;
   background-color:#ab892c;
+  padding:10px;
+  border-radius: 5px;
+  
 }
 .cadi img{
   width:96px;
@@ -125,5 +137,9 @@ animation-duration:10s;
   justify-content: center;
   margin: 5px;
   boder-radius:10px;
+}
+
+.languag{
+  justify-content: center;
 }
 
