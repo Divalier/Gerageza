@@ -102,7 +102,7 @@ animation-duration:10s;
   background-color:#ab892c;
   padding:10px;
   border-radius: 5px;
-  
+
 }
 .cadi img{
   width:96px;
@@ -141,5 +141,9 @@ animation-duration:10s;
 
 .languag{
   justify-content: center;
+}
+
+@media only screen and () and () {
+  
 }
 
