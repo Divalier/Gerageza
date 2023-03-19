@@ -11,7 +11,7 @@ class NavV extends React.Component {
                 <div className="  flex justify-center ">The National Bank of Rwanda does not enter data into this system and the values shown in this website are estimations, they may change depending on individual bank policies, risk evaluation including your individual risk profile. For more details and clarification, please contact the bank of your choice.
                 </div>
                 <div class="flex justify-center mt-6">
-                <button className="leading-5 bg-gray-400 p-2  " onClick={this.props.closePopup} >I understand</button>
+                <button className="leading-5 bg-gray-400 hover:bg-gray-200 font-bold p-2  " onClick={this.props.closePopup} >I understand</button>
                 </div>
                 </div>
             </div>

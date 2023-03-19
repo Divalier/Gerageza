@@ -43,10 +43,11 @@ this.setState({dispaly:image[(mov-1)]})
             (<NavV closePopup={this.togglePopup.bind(this)} />))
           : ((document.body.style.overflow = `scroll`), null)}
 
-        <div className="top-nav  grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-1  p-2">
+        <div className="top-nav cont  grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-1  p-2">
           <div className="flex   log  ">
             <img alt=" bnr log" src={log} />
           </div>
+          
           <div className="flex  flex-col space-y-3 national p-2 ">
             <p className="nationalt font-bold">NATIONAL BANK OF RWANDA</p>
             <p>
@@ -102,15 +103,15 @@ this.setState({dispaly:image[(mov-1)]})
             <div className="slide"></div>
           </div>
           {/* banking */}
-          <div className=" bg-white mt-4">
-            <div className="banking flex justify-center">
+          <div className=" serv  mt-2">
+            <div className="  bg-white banking cont flex justify-center">
               <button className="bank text-gray-400 "> Banking</button>
             </div>
 
             <hr />
             <div className=" grid grid-cols-1 lg:grid-cols-4 gap-1 ">
               {/* nav */}
-              <div className="service flex flex-col p-6 shadow-md dark:bg-gray-800">
+              <div className="service  bg-white flex flex-col p-6 shadow-md dark:bg-gray-800">
                 <div className="bank text-gray-400 ">Main Service</div>
                 <div>
                   <button>Loans</button>
@@ -130,7 +131,7 @@ this.setState({dispaly:image[(mov-1)]})
               {/* cards */}
               <div>
                 {/* cd */}
-                <div className="cad p-3 flex flex-col shadow-md justify-center dark:bg-gray-800">
+                <div className="cad p-3  bg-white  cont  flex flex-col shadow-md justify-center dark:bg-gray-800">
                   <div className="cadi  flex justify-center">
                     <img alt="cardimage" src={Consumer} />
                   </div>
@@ -147,43 +148,7 @@ this.setState({dispaly:image[(mov-1)]})
                   </div>
                 </div>
                 {/* cd */}
-                <div className="cad p-3 flex flex-col shadow-md justify-center dark:bg-gray-800">
-                  <div className="cadi  flex justify-center">
-                    <img alt="cardimage" src={Consumer} />
-                  </div>
-                  <div className="cadt font-bold  flex justify-center ">
-                    Consumer Loans
-                  </div>
-                  <div className="cadd  flex justify-center ">
-                    Consumer loans are loans where a person borrows money from a
-                    lender for personal reasons. Normally these loans are not
-                    subject to a particular project
-                  </div>
-                  <div className="cadb  flex justify-center ">
-                    <button>Compare</button>
-                  </div>
-                </div>
-              </div>
-              <div>
-                {/* cd */}
-                <div className="cad p-3 flex flex-col shadow-md justify-center dark:bg-gray-800">
-                  <div className="cadi  flex justify-center">
-                    <img alt="cardimage" src={Consumer} />
-                  </div>
-                  <div className="cadt font-bold  flex justify-center ">
-                    Consumer Loans
-                  </div>
-                  <div className="cadd  flex justify-center ">
-                    Consumer loans are loans where a person borrows money from a
-                    lender for personal reasons. Normally these loans are not
-                    subject to a particular project
-                  </div>
-                  <div className="cadb  flex justify-center ">
-                    <button>Compare</button>
-                  </div>
-                </div>
-                {/* cd */}
-                <div className="cad p-3 flex flex-col shadow-md justify-center dark:bg-gray-800">
+                <div className="cad p-3  bg-white cont flex flex-col shadow-md justify-center dark:bg-gray-800">
                   <div className="cadi  flex justify-center">
                     <img alt="cardimage" src={Consumer} />
                   </div>
@@ -202,7 +167,7 @@ this.setState({dispaly:image[(mov-1)]})
               </div>
               <div>
                 {/* cd */}
-                <div className="cad p-3 flex flex-col shadow-md justify-center dark:bg-gray-800">
+                <div className="cad p-3  bg-white cont flex flex-col shadow-md justify-center dark:bg-gray-800">
                   <div className="cadi  flex justify-center">
                     <img alt="cardimage" src={Consumer} />
                   </div>
@@ -219,7 +184,43 @@ this.setState({dispaly:image[(mov-1)]})
                   </div>
                 </div>
                 {/* cd */}
-                <div className="cad p-3 flex flex-col shadow-md justify-center dark:bg-gray-800">
+                <div className="cad p-3  bg-white cont flex flex-col shadow-md justify-center dark:bg-gray-800">
+                  <div className="cadi  flex justify-center">
+                    <img alt="cardimage" src={Consumer} />
+                  </div>
+                  <div className="cadt font-bold  flex justify-center ">
+                    Consumer Loans
+                  </div>
+                  <div className="cadd  flex justify-center ">
+                    Consumer loans are loans where a person borrows money from a
+                    lender for personal reasons. Normally these loans are not
+                    subject to a particular project
+                  </div>
+                  <div className="cadb  flex justify-center ">
+                    <button>Compare</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                {/* cd */}
+                <div className="cad p-3  bg-white cont flex flex-col shadow-md justify-center dark:bg-gray-800">
+                  <div className="cadi  flex justify-center">
+                    <img alt="cardimage" src={Consumer} />
+                  </div>
+                  <div className="cadt font-bold  flex justify-center ">
+                    Consumer Loans
+                  </div>
+                  <div className="cadd  flex justify-center ">
+                    Consumer loans are loans where a person borrows money from a
+                    lender for personal reasons. Normally these loans are not
+                    subject to a particular project
+                  </div>
+                  <div className="cadb  flex justify-center ">
+                    <button>Compare</button>
+                  </div>
+                </div>
+                {/* cd */}
+                <div className="cad p-3  bg-white cont flex flex-col shadow-md justify-center dark:bg-gray-800">
                   <div className="cadi  flex justify-center">
                     <img alt="cardimage" src={Consumer} />
                   </div>

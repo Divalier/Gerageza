@@ -91,7 +91,9 @@ left:100%;
 animation-name:slide;
 animation-duration:10s;
 }
-
+ .cad{
+  margin-bottom:10px;
+ }
 .cadt:hover{
   color: #753918;
 }
@@ -143,7 +145,35 @@ animation-duration:10s;
   justify-content: center;
 }
 
-@media only screen and () and () {
+@media only screen and (max-width : 425px) {
+  .cont{
+    height:100 vh;
+    width:100%;
+  }
+
+  .cad{
+    height:100 vh;
+    width:100%;
+
+  }
+
+  .popup_inner {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 16%;
+   
+  }
+  .Navbar,.slide, .mslide{
+    display:none;
+  }
+  .main{
+    width:96%;
+    margin-left:2%;
+  }
+}
+
+
+@media only screen and (max-width : 768px) and (min-width: 425px) {
   
 }
 
